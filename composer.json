@@ -1,0 +1,31 @@
+{
+  "name": "hongxuan/smart-dm",
+  "description": "a integrated dm package",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "宏玄",
+      "email": "cairunqi@yeah.net"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "guzzlehttp/guzzle": "^6.2",
+    "monolog/monolog": "^1.22",
+    "ext-openssl": "*",
+    "pimple/pimple": "^3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Dm\\": "src/",
+      "Aliyun\\": "src/Aliyun/lib/",
+      "Aliyun\\Test\\": "src/Aliyun/tests/",
+      "AliyunMNS\\": "src/Aliyun/lib/MNS/"
+    }
+  }
+}
